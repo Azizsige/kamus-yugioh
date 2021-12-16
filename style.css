@@ -1,0 +1,171 @@
+@font-face {
+  font-family: "matrix2";
+  src: url("./fonts/Matrix II Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "handel";
+  src: url("./fonts/handel-gothic.woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #312515;
+  font-family: "Arvo", serif;
+  color: #fff;
+}
+
+/* Loading */
+.loading {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  box-shadow: 0 -3em rgba(222, 188, 74, 1),
+    2.25em -2.25em rgba(222, 188, 74, 0.875), 3em 0 rgba(222, 188, 74, 0.75),
+    2.25em 2.25em rgba(222, 188, 74, 0.625), 0 3em rgba(222, 188, 74, 0.5),
+    -2.25em 2.25em rgba(222, 188, 74, 0.375), -3em 0 rgba(222, 188, 74, 0.25),
+    -2.25em -2.25em rgba(222, 188, 74, 0.125);
+  animation: spin 1.2s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+}
+
+.loading.hide {
+  display: none;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+/* End of Loading */
+
+/* Pagination */
+/* .pagination button.hide {
+  display: none;
+} */
+
+.pagination button {
+  padding: 10px 20px;
+  margin: 0 10px 0 0;
+}
+/* End of Pagination */
+
+main {
+  height: auto;
+  /* max-height: 104vh; */
+  min-height: 78vh;
+  margin: 0 0 20px 0;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Arvo", serif;
+}
+
+.content-filter {
+  margin: 15px 0 0 0;
+}
+
+.content-filter label {
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: "Arvo", serif;
+  margin: 0 10px 0 15px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 0 0;
+}
+
+select {
+  background-color: #debc4a;
+  border: 0;
+  font-family: "Arvo", serif;
+  width: 7rem;
+  height: 2rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.content-filter__monster,
+.content-filter__level,
+.content-filter__race,
+.content-filter__attr {
+  margin: 20px 0 0 0;
+}
+
+select#monster {
+  width: 5rem;
+}
+
+select option {
+  font-family: "Arvo", serif;
+}
+
+.content-filter__level select {
+  width: 2rem;
+  font-size: 1rem;
+}
+
+.content-results {
+  margin: 30px 0 0 0;
+  height: auto;
+}
+
+.content-results__text {
+  margin: 0px 0 0 15px;
+}
+
+.content-results__img {
+  margin: 20px 0 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.content-results__img img {
+  width: 100px;
+  height: 150px;
+  margin: 20px 0 0 0;
+}
+
+footer {
+  background-color: #88632e;
+  width: 100%;
+  padding: 10px;
+}
+
+footer h5 {
+  margin: 5px 0 0 0;
+  text-align: center;
+  font-size: 0.7rem;
+  font-family: "Arvo", serif;
+  color: white;
+}
+
+#Arvo {
+  font-family: "Arvo", serif;
+}
+
+#Dosis {
+  font-family: "Dosis", sans-serif;
+}

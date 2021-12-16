@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google" content="notranslate" />
+  <link rel="stylesheet" href="./style.css" type="text/css" media="all" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+  href="https://fonts.googleapis.com/css2?family=Arvo&family=Dosis:wght@400;500&display=swap"
+  rel="stylesheet"
+  />
+
+  <title>Yu-Gi-Oh Dex</title>
+</head>
+<body>
+  <header>
+    <navbar>
+      <h1>Kamus Yu-Gi-Oh</h1>
+    </navbar>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="content">
+        <div class="content-filter">
+          <div class="content-filter__type">
+            <label for="types">Search by : </label>
+            <select name="" id="types">
+              <option value="all">All</option>
+              <option value="monster">Monsters</option>
+              <option value="spell">Spell Cards</option>
+              <option value="trap">Trap Cards</option>
+            </select>
+          </div>
+          <!-- <div class="content-filter__monster">
+                                  <label for="monsters">Type Of Monsters : </label>
+                                  <select name="" id="monsters">
+                                    <option value="normal">Normal</option>
+                                    <option value="monster">Effect</option>
+                                    <option value="ritual">Ritual</option>
+                                    <option value="fusion">Fusion</option>
+                                  </select>
+                                </div>
+                                <div class="content-filter__level">
+                                  <label for="level">Level or Rank : </label>
+                                  <select name="" id="level">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                  </select>
+                                </div>
+                                <div class="content-filter__race">
+                                  <label for="Race">Race : </label>
+                                  <select name="" id="Race">
+                                    <option value="aqua">(img) Aqua</option>
+                                    <option value="beast">Beast</option>
+                                    <option value="beast-warrior">Beast-Warrior</option>
+                                    <option value=" creator-cod
+                                    ">Creator-God
+                                    </option>
+                                    <option value="cyberse">Cyberse</option>
+                                    <option value="dinosaur">Dinosaur</option>
+                                    <option value=" divine-beast
+                                    ">Divine-Beast
+                                    </option>
+                                    <option value="dragon">Dragon</option>
+                                    <option value="Fairy">Fairy</option>
+                                    <option value="Fiend">Fiend</option>
+                                    <option value="Fish">Fish</option>
+                                    <option value="Insect">Insect</option>
+                                    <option value="Machine">Machine</option>
+                                    <option value="Plant">Plant</option>
+                                    <option value="Psychic">Psychic</option>
+                                    <option value="Pyro">Pyro</option>
+                                    <option value="Reptile">Reptile</option>
+                                    <option value="Rock">Rock</option>
+                                    <option value=" Sea Serpent">Sea Serpent</option>
+                                    <option value="Spellcaster">Spellcaster</option>
+                                    <option value="Thunder">Thunder</option>
+                                    <option value="Warrior">Warrior</option>
+                                    <option value="Winged Beast"> Winged Beast</option>
+                                    <option value="Wyrm">Wyrm</option>
+                                    <option value="Zombie">Zombie</option>
+                                  </select>
+                                </div>
+                                <div class="content-filter__attr">
+                                  <label for="level">Attribute : </label>
+                                  <select name="" id="attr">
+                                    <option value="DARK">(img) DARK</option>
+                                    <option value="DIVINE">DIVINE</option>
+                                    <option value="EARTH">EARTH</option>
+                                    <option value="FIRE">FIRE</option>
+                                    <option value="LIGHT">LIGHT</option>
+                                    <option value="WATER">WATER</option>
+                                    <option value="WIND">WIND</option>
+                                  </select>
+                                </div>
+                              </div> -->
+        </div>
+        <div class="content-results">
+          <div class="content-results__text">
+            <p>
+              Showing num cards :
+            </p>
+          </div>
+          <!--<div class="loading"></div>-->
+          <div class="content-results__img" id="content-results__img">
+          </div>
+          <div class="pagination">
+            <!-- <button class="hide" id="next" type="submit">Prev</button> -->
+            <button class="hide" id="loadMore" type="submit">Load More</button>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <h5>All Right Reserved</h5>
+        <h5>made with ❤️ by @azizsige</h5>
+        <h5>Special Thanks to YU-GI-OH API</h5>
+      </footer>
+
+      <script src="./filter.js"></script>
+    </body>
+  </html>
